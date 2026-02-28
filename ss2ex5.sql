@@ -1,0 +1,15 @@
+CREATE TABLE classes (
+    MaLop VARCHAR(10) PRIMARY KEY,
+    TenLop VARCHAR(100) NOT NULL,
+    NamHoc VARCHAR(9) NOT NULL
+) ENGINE=InnoDB;
+
+CREATE TABLE students (
+    MaSinhVien VARCHAR(10) PRIMARY KEY,
+    HoTen VARCHAR(100) NOT NULL,
+    NgaySinh DATE NOT NULL,
+    GioiTinh VARCHAR(10) NOT NULL,
+    MaLop VARCHAR(10) NOT NULL,
+
+    FOREIGN KEY (MaLop) REFERENCES classes(MaLop)
+) ENGINE=InnoDB;
