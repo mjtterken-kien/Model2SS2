@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS QuanLyLopHoc;
+CREATE DATABASE QuanLyLopHoc;
 USE QuanLyLopHoc;
 
 -- Tạo bảng students
